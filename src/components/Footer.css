@@ -1,0 +1,17 @@
+.footer {
+    background-color: #747474; /* Dark wood color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Reduce footer size */
+.footer p {
+    margin: 0;
+    padding: 0;
+}

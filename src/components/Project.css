@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.name {
+    color: #00c6ff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.heading {
+    color: #00c6ff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.projects {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.project-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Changing grid to flex for horizontal scrolling */
+.project-grid {
+    display: flex;
+    overflow-x: auto;  /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Styling the scrollbar */
+.project-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-grid::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+.project-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    flex: 0 0 350px;  /* Each card will have a fixed width */
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 30px #00c6ff;
+}

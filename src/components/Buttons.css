@@ -1,0 +1,37 @@
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    gap: 20px;
+}
+
+/* Text Style for Buttons */
+.top-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.top-buttons a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .top-buttons {
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+        gap: 10px;
+    }
+    .top-buttons a {
+        font-size: 16px;
+    }
+}

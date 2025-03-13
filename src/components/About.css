@@ -1,0 +1,181 @@
+/* Background and Body Settings */
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Main Container */
+.about-container {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000000;
+}
+.h2,h3,h4{
+    color: #00c6ff;
+}
+
+.about-heading {
+    font-size: 40px;
+    color: #00c6ff;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.about-heading .highlight {
+    color: #ffffff;
+}
+
+
+/* Profile Section */
+.about-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 280px;
+    height: 350px;
+    border: 4px solid #ffffff;
+}
+
+/* Profile Info */
+.profile-info {
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #00c6ff;
+    font-size: 28px;
+}
+
+/* ✅ Changed Side Headings to Blue */
+.profile-info p strong {
+    color: #00c6ff;
+    font-size: 18px;
+}
+
+/* Profile Info Text */
+.profile-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+/* Cards Section */
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Individual Card */
+.about-card {
+    background: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #e0e0e0;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px #00c6ff;
+    border: 1px solid #00c6ff;
+}
+
+.download-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.download-btn {
+    padding: 14px 40px;
+    background-color: #00c6ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.4s;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.download-btn:hover {
+    background-color:  #00c6ff;
+    transform: scale(1.05);
+}
+
+.education-heading {
+    font-size: 30px;
+    margin-top: 60px;
+    color: #00c6ff;
+    text-transform: uppercase;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.education-box {
+    background-color: #121212;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+    color: #e0e0e0;
+}
+
+.education-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #00c6ff;
+    border: 1px solid #00c6ff;
+}
+
+/* Education Box Headings */
+.education-box h4 {
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+/* Education Box Text */
+.education-box p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* Smooth Transition */
+.about-card,
+.education-box,
+.download-btn {
+    transition: all 0.4s ease;
+}

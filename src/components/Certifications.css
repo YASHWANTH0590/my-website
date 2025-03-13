@@ -1,0 +1,118 @@
+.certifications-container {
+    padding: 50px;
+    background-color: #000000;
+    text-align: center;
+}
+
+/* Corrected color classes */
+.blue-text {
+    color: #00c6ff !important; /* Ensuring "MY" is blue */
+    font-weight: bold;
+}
+
+.white-text {
+    color: white !important; /* Ensuring "CERTIFICATES" is white */
+    font-weight: bold;
+}
+
+/* Certifications Heading */
+.certifications-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+/* Individual Card */
+.certification-card {
+    background-color: #121212;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+/* Card Hover Effect */
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px #00c6ff;
+    border: 1px solid #00c6ff;
+}
+
+/* Certificate Details */
+.certificate-details {
+    text-align: left;
+    flex: 1;
+    padding-right: 30px;
+    color: white;
+}
+
+.certificate-details h2 {
+    font-size: 1.5rem;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.certificate-details p {
+    font-size: 1rem;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+/* Certificate Image */
+.certificate-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-image {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.certificate-image:hover {
+    transform: scale(1.05);
+}
+
+/* View Certificate Link */
+.view-certificate-link {
+    text-decoration: none;
+    color: #00c6ff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: color 0.3s;
+}
+
+.view-certificate-link:hover {
+    color: #f57c00;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certification-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certificate-details {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .certificate-image {
+        width: 100%;
+        height: auto;
+    }
+}
