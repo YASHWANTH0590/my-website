@@ -1,9 +1,9 @@
 .footer {
-    background-color: #747474; /* Dark wood color */
-    color: white;
+    background-color: #9c9c9c; /* Dark wood color */
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative; /* Remove 'fixed' */
     bottom: 0;
     width: 100%;
     font-size: 14px;

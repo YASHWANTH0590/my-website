@@ -2,16 +2,18 @@
     padding: 50px;
     background-color: #000000;
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 /* Corrected color classes */
 .blue-text {
-    color: #00c6ff !important; /* Ensuring "MY" is blue */
+    color: #00c6ff !important;
     font-weight: bold;
 }
 
 .white-text {
-    color: white !important; /* Ensuring "CERTIFICATES" is white */
+    color: white !important;
     font-weight: bold;
 }
 
@@ -20,7 +22,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 30px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 /* Individual Card */
@@ -36,6 +38,7 @@
     align-items: center;
     padding: 20px;
     transition: transform 0.3s;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
 }
 
 /* Card Hover Effect */
@@ -100,10 +103,15 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .certifications-container {
+        width: 95%;
+    }
+
     .certification-card {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
 
     .certificate-details {
@@ -114,5 +122,45 @@
     .certificate-image {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-heading {
+        font-size: 2rem;
+    }
+
+    .certificate-details h2 {
+        font-size: 1.3rem;
+    }
+
+    .certificate-details p {
+        font-size: 0.95rem;
+    }
+
+    .certificate-image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-container {
+        padding: 30px;
+    }
+
+    .certifications-heading {
+        font-size: 1.8rem;
+    }
+
+    .certificate-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .certificate-details p {
+        font-size: 0.9rem;
+    }
+
+    .certificate-image {
+        width: 100%;
     }
 }

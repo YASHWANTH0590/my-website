@@ -1,5 +1,16 @@
+/* ======= Global Styles ======= */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+/* ======= Background Container ======= */
 .home-container {
-    background-image: url('../images/bc2.jpg');
+    background-image: url('../images/bc2.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -7,12 +18,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
     position: relative;
-    
+    padding: 20px;
 }
 
-/* Add Black Transparent Layer Over Background */
+/* ======= Dark Overlay for Better Readability ======= */
 .home-container::before {
     content: '';
     position: absolute;
@@ -20,10 +31,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent Black Layer */
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 0;
 }
 
+/* ======= Main Heading (Welcome) ======= */
 .main-heading {
     font-size: 3rem;
     font-weight: bold;
@@ -34,56 +46,54 @@
     animation: fadeIn 2s ease-in-out;
     position: relative;
     z-index: 1;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Typing Effect for Name */
+/* ======= Typing Effect for Name ======= */
 .typing-text {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-/* Job Title (A Software Developer) */
-.typing-text.title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #00c0e7;
-    margin-top: 10px;
     position: relative;
     z-index: 1;
-    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-/* Description Text */
-.home-content p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    text-align: center;
-    max-width: 600px;
-    margin-top: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-/* Smooth Typing Cursor Effect */
-.typing-text::after {
+/* Cursor Effect */
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    background-color: #00c0e7;
     animation: blink 0.7s infinite;
-    color: #00d5ff;
 }
 
-/* Typing Cursor Blinking Animation */
+/* Blinking Cursor Animation */
 @keyframes blink {
     50% {
         opacity: 0;
     }
 }
 
-/* Fade-in Effect for Main Heading */
+/* ======= Job Title (Software Developer) ======= */
+.typing-text.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+/* ======= Description Text ======= */
+.home-content p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ======= Fade-in Effect for Main Heading ======= */
 @keyframes fadeIn {
     0% {
         transform: translateY(-20px);
@@ -95,10 +105,41 @@
     }
 }
 
-/* Mobile Responsive Design */
+/* ======= Mobile Responsive Design ======= */
+@media (max-width: 1024px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .typing-text {
+        font-size: 2rem;
+    }
+    .typing-text.title {
+        font-size: 1.5rem;
+    }
+    .home-content p {
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     .main-heading {
         font-size: 2rem;
+    }
+    .typing-text {
+        font-size: 1.8rem;
+    }
+    .typing-text.title {
+        font-size: 1.3rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.8rem;
     }
     .typing-text {
         font-size: 1.5rem;
@@ -107,6 +148,6 @@
         font-size: 1.2rem;
     }
     .home-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
