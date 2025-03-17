@@ -1,21 +1,24 @@
-/* Background and Body Settings */
+/* ✅ Global Styles */
 body {
     background-color: #000000;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Main Container */
+/* ✅ Main Container */
 .about-container {
     width: 100%;
     padding: 60px 20px;
     text-align: center;
     background-color: #000000;
 }
-.h2,h3,h4{
+
+h2, h3, h4 {
     color: #00c6ff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+/* ✅ About Heading */
 .about-heading {
     font-size: 40px;
     color: #00c6ff;
@@ -29,10 +32,10 @@ body {
     color: #ffffff;
 }
 
-
-/* Profile Section */
+/* ✅ Responsive Profile Section */
 .about-profile {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #121212;
@@ -44,18 +47,23 @@ body {
     gap: 20px;
 }
 
-/* Profile Image */
+/* ✅ Make Image Responsive */
 .profile-image img {
-    width: 280px;
-    height: 350px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     border: 4px solid #ffffff;
+    border-radius: 8px;
 }
 
-/* Profile Info */
+/* ✅ Profile Info */
 .profile-info {
     text-align: left;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    min-width: 300px;
+    flex: 1;
 }
 
 .profile-info h2 {
@@ -64,29 +72,28 @@ body {
     font-size: 28px;
 }
 
-/* ✅ Changed Side Headings to Blue */
+/* ✅ Consistent Side Headings */
 .profile-info p strong {
     color: #00c6ff;
     font-size: 18px;
 }
 
-/* Profile Info Text */
 .profile-info p {
     margin: 5px 0;
     font-size: 18px;
     color: #e0e0e0;
 }
 
-/* Cards Section */
+/* ✅ Cards Section */
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 20px auto;
 }
 
-/* Individual Card */
+/* ✅ Individual Card */
 .about-card {
     background: #121212;
     padding: 20px;
@@ -105,6 +112,7 @@ body {
     border: 1px solid #00c6ff;
 }
 
+/* ✅ Download Button */
 .download-container {
     margin-top: 50px;
     text-align: center;
@@ -128,6 +136,7 @@ body {
     transform: scale(1.05);
 }
 
+/* ✅ Education Section */
 .education-heading {
     font-size: 30px;
     margin-top: 60px;
@@ -161,21 +170,34 @@ body {
     border: 1px solid #00c6ff;
 }
 
-/* Education Box Headings */
+/* ✅ Education Box Headings */
 .education-box h4 {
     color: #00c6ff;
     margin-bottom: 10px;
 }
 
-/* Education Box Text */
+/* ✅ Education Box Text */
 .education-box p {
     font-size: 16px;
     color: #e0e0e0;
 }
 
-/* Smooth Transition */
+/* ✅ Smooth Transition */
 .about-card,
 .education-box,
 .download-btn {
     transition: all 0.4s ease;
+}
+
+/* ✅ Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .about-profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .profile-info {
+        text-align: center;
+    }
 }

@@ -63,8 +63,8 @@ export default function About() {
           <h3>Certifications 📜</h3>
           <ul>
             <li>AWS Certified Practitioner (AWS-CP)</li>
-            <li>Microsoft Azure AI-900</li>
-            <li>Google Cloud AI Essentials</li>
+            <li>RedHat Developer EX183 </li>
+            <li>Automation Anywhere</li>
           </ul>
         </div>
       </div>
